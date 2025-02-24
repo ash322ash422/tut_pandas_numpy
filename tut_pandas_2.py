@@ -39,9 +39,11 @@ print("\nDuplicate Records:\n", df[duplicates])
 df = df.drop_duplicates()
 print("\nDataFrame after removing duplicates:\n", df)
 
+#Save the clean data to CSV file
+df.to_csv("data_clean.csv")
+
 
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.model_selection import train_test_split
 
 # Encoding categorical variables
 label_encoder = LabelEncoder()
@@ -54,11 +56,10 @@ df[['Age', 'Salary', 'Experience']] = scaler.fit_transform(df[['Age', 'Salary', 
 print("\nDataFrame after scaling:\n", df)
 
 # Splitting Data for Training and Testing
-X = df[['Age', 'Salary', 'Experience', 'City_encoded']]
+from sklearn.model_selection import train_test_split
+X = df[['Age', 'Experience', 'City_encoded']]
 y = df['Salary']  # Assuming salary is the target variable
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-print("\nTraining Features:\n", X_train.head())
-print("\nTesting Features:\n", X_test.head())
-
-
+print("\nTraining Features:\n", X_train)
+print("\nTesting Features:\n", X_test)

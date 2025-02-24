@@ -1,11 +1,12 @@
-Name,Age,City,Salary,Experience
-Alice,25,New York,70000,2
-Bob,30,Los Angeles,80000,5
-Charlie,35,Chicago,,7
-David,40,Houston,90000,10
-Eva,22,Phoenix,48000,1
-Frank,28,,72000,3
-Grace,32,San Antonio,85000,6
-Helen,26,San Diego,62000,2
-Helen,26,San Diego,62000,2
-Helen,26,San Diego,62000,2
+Name,Age,City,Experience,Experience2,Salary
+Alice,25,Chicago,2,2,70000
+Bob,30,Los Angeles,5,5,80000
+Charlie,35,Chicago,7,7,
+David,40,Houston,10,10,90000
+Eva,22,Houston,1,1,48000
+Frank,28,,3,3,72000
+Grace,32,San Antonio,6,6,85000
+Helen,26,San Diego,2,2,62000
+Helen,26,San Diego,2,2,62000
+Helen,26,San Diego,2,2,62000
+Jerry,23,Phoenix,6,6,78000

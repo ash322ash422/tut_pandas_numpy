@@ -5,8 +5,6 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.model_selection import train_test_split
 
-import pandas as pd
-
 # Read data from CSV file
 df = pd.read_csv('data.csv')  # Replace 'data.csv' with your actual file path
 print("\nDataFrame:\n", df.head())
