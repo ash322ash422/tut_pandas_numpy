@@ -32,7 +32,7 @@ def basic_operations(ages, income):
     return income_doubled, age_plus_10
 
 # 4. Linear Algebra: Matrix Operations
-def matrix_operations():
+def matrix_operations(): # presently just do multiplication
     # Example matrices (2x2 and 2x2 matrix)
     A = np.array([[1, 2], [3, 4]])
     B = np.array([[5, 6], [7, 8]])
@@ -48,7 +48,7 @@ def matrix_operations():
     print(C)
     
 # 5. Random Data Generation and Manipulation
-def random_data_manipulation():
+def analyze_random_data():
     # Create random dataset with 1000 values
     data = np.random.randn(1000)
     
@@ -107,7 +107,7 @@ def main():
     matrix_operations()
     
     # 5. Generate random data and analyze it
-    random_data_manipulation()
+    analyze_random_data()
     
     # 6. Visualize the data
     plot_data(ages, income, income_doubled, age_plus_10)
