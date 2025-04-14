@@ -1,10 +1,10 @@
-,Name,Age,City,Experience,Salary
-0,Alice,25,Chicago,2,70000.0
-1,Bob,30,Los Angeles,5,30.0
-2,Charlie,35,delhi,7,66000.0
-3,David,40,Houston,10,90000.0
-4,Eva,22,Houston,1,48000.0
-5,Frank,28,Unknown,3,72000.0
-6,Grace,32,San Antonio,6,85000.0
-7,Helen,26,San Diego,2,62000.0
-10,Jerry,23,Phoenix,6,78000.0
+,Name,Age,City,Experience,Experience2,Salary
+0,Alice,25,Chicago,2,2,70000.0
+1,Bob,30,Los Angeles,5,5,80000.0
+2,Charlie,35,Chicago,7,7,71000.0
+3,David,40,Houston,10,10,90000.0
+4,Eva,22,Houston,1,1,48000.0
+5,Frank,28,Unknown,3,3,72000.0
+6,Grace,32,San Antonio,6,6,85000.0
+7,Helen,26,San Diego,2,2,62000.0
+10,Jerry,23,Phoenix,6,6,78000.0
