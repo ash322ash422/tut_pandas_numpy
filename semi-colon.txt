@@ -1,0 +1,3 @@
+name;age;place of birth
+Ash,Kumar;23;Moon
+Sameer, Khosla;32;NY, NewYork
