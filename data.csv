@@ -1,12 +1,12 @@
-Name,Age,City,Experience,Experience2,Salary,passport
-Alice,25,Chicago,2,2,70000,a43
-Bob,30,Los Angeles,5,5,80000,a44
-Charlie,35,Chicago,7,7,,a45
-David,40,Houston,10,10,90000,a46
-Eva,22,Houston,1,1,48000,a47
-Frank,28,,3,3,72000,a48
-Grace,32,San Antonio,6,6,85000,a49
-Helen,26,San Diego,2,2,62000,a50
-Helen,26,San Diego,2,2,62000,a51
-Helen,26,San Diego,2,2,62000,a52
-Jerry,23,Phoenix,6,6,78000,a53
+Name,Age,City,Experience,Experience2,Salary,passport,bonus
+Alice,25,Chicago,2,2,70000,a43,1000
+Bob,30,Los Angeles,5,5,80000,a44,3000
+Charlie,35,Chicago,7,7,,a45,0
+David,40,Houston,10,10,90000,a46,7000
+Eva,22,Houston,1,1,48000,a47,2555
+Frank,28,,3,3,72000,a48,0
+Grace,32,San Antonio,6,6,85000,a49,0
+Helen,26,San Diego,2,2,62000,a50,9000
+Helen,26,San Diego,2,2,62000,a51,0
+Helen,26,San Diego,2,2,62000,a52,3000
+Jerry,23,Phoenix,6,6,78000,a53,0
