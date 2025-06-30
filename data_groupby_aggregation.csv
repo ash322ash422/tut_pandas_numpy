@@ -2,9 +2,9 @@ Department,Employee,Salary,Experience,Region
 HR,Rahim,60000,2,East
 IT,Vanessa,75000,5,West
 Finance,Cory,82000,7,East
-HR,David,58000,3,West
+HR,David,58000,3,
 IT,Neha,79000,4,East
-Finance,Frank,91000,9,West
+Finance,Frank,,9,West
 HR,Grace,62000,2,East
 IT,Helen,73000,6,East
 Finance,Ian,88000,8,West
