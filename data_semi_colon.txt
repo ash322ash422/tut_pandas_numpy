@@ -1,0 +1,5 @@
+name;age;place of birth
+Ash,Kumar;23;Moon
+Sameer, Khosla;32;HR, Haryana
+Khan, Rahim;34;NY, NewYork
+Shamlodhiya, Kumar;20;NY, NewYork
