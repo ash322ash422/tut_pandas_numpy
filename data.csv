@@ -1,4 +1,4 @@
-Name,Age,City,Experience,Experience2,Salary,passport,bonus,hours
+Name,Age,City,Exp,Exp2,Salary,passport,bonus,hours
 Alice,25,Chicago,2,2,70000,a43,1000,100
 Bob,30,Los Angeles,5,5,80000,a44,3000,150
 Charlie,35,Chicago,7,7,,a45,0,200
