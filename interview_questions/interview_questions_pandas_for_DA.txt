@@ -1,0 +1,32 @@
+what is a CSV file?
+
+
+How to find much memory does the dataframe consume?
+
+
+How do I find the statistics like mean, min, max 25thpercentile,etc in pandas?
+
+
+Tell me visualization libraries that are used for data analysis
+
+
+Why do we use Pandas . What Pandas can do that Python  cannot do
+
+
+How do you create a new column based on existing columns?
+df['new_column'] = df['col1'] + df['col2']. 
+
+
+How to Rename a Column in a DataFrame?
+df.rename(columns={'column1': 'COLUMN_1', 'column2':'COLUMN_2'}, inplace=True)
+
+
+How to add Row to an Existing Dataframe?
+df.loc[Row_Index]=new_row
+
+
+How to Delete an Row or Column from an Existing DataFrame?
+df.drop(['Column_Name'], axis=1)
+df.drop([Row_Index_Number], axis=0)
+
+How to Find the Correlation Using Pandas?
