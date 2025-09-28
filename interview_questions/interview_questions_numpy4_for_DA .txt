@@ -1,0 +1,188 @@
+**slightly advanced NumPy Q\&A set** tailored for a **Data Analyst role**. 
+These focus on **vectorization, masking, NaN handling, and performance comparisons**—topics that often come up in real-world data analysis.
+
+---
+
+## Advanced NumPy Questions for Data Analysts
+
+### 1. **What is vectorization in NumPy and why is it important?**
+
+**Answer:**
+Vectorization means applying operations to **entire arrays at once** instead of looping through elements. This improves performance because operations are implemented in **C under the hood**.
+
+```python
+import numpy as np
+
+arr = np.arange(1, 6)
+
+# Without vectorization (slow, Python loop)
+squared_loop = [x**2 for x in arr]
+
+# With vectorization (fast, NumPy)
+squared_np = arr ** 2
+print(squared_np)  # [ 1  4  9 16 25]
+```
+
+
+### 1. **Create a 3X4X6 array**
+
+```
+arr     = np.arange(3*4*6)
+new_arr = arr.reshape((3,4,6))
+print(new_arr)
+```
+
+---
+
+### 2. **How do you filter elements in a NumPy array using masking?**
+
+**Answer:**
+
+```python
+arr = np.array([10, 15, 20, 25, 30])
+
+# Boolean mask
+mask = arr > 20
+print(mask)        # [False False False  True  True]
+print(arr[mask])   # [25 30]
+```
+
+Masking is widely used in **data cleaning** and **conditional selection**.
+
+---
+
+### 3. **How do you handle missing values (`NaN`) in NumPy?**
+
+**Answer:**
+
+```python
+arr = np.array([1, 2, np.nan, 4, 5])
+
+print(np.isnan(arr))      # [False False  True False False]
+print(arr[~np.isnan(arr)])  # [1. 2. 4. 5.]
+
+# Replace NaN with mean
+arr[np.isnan(arr)] = np.nanmean(arr)
+print(arr)  # [1. 2. 3. 4. 5.]
+```
+
+---
+
+### 4. **How do you compare the performance of NumPy vs. Python lists?**
+
+**Answer:**
+
+```python
+import numpy as np
+import time
+
+size = 1_000_000
+lst = list(range(size))
+arr = np.arange(size)
+
+# Python list
+start = time.time()
+lst_sq = [x**2 for x in lst]
+end = time.time()
+print("List time:", end - start)
+
+# NumPy array
+start = time.time()
+arr_sq = arr ** 2
+end = time.time()
+print("NumPy time:", end - start)
+```
+
+ NumPy is typically **10x–100x faster** for large datasets due to vectorization.
+
+---
+
+### 5. **What is the difference between `np.nan` and `None`?**
+
+**Answer:**
+
+* `np.nan` is a **floating-point placeholder** for missing values.
+* `None` is a **Python object**, not supported in vectorized NumPy operations.
+  Example:
+
+```python
+np.nan + 5   # Output: nan
+None + 5     # Error: unsupported operand
+```
+
+---
+
+### 6. **How do you compute correlation or covariance using NumPy?**
+
+**Answer:**
+
+```python
+x = np.array([1, 2, 3, 4, 5])
+y = np.array([2, 4, 6, 8, 10])
+
+print(np.corrcoef(x, y))  # Correlation matrix
+print(np.cov(x, y))       # Covariance matrix
+```
+
+Useful for **exploratory data analysis**.
+
+---
+
+### 7. **How do you normalize a NumPy array (scaling values between 0 and 1)?**
+
+**Answer:**
+
+```python
+arr = np.array([10, 20, 30, 40, 50])
+normalized = (arr - arr.min()) / (arr.max() - arr.min())
+print(normalized)
+
+
+# min = 10, max = 50
+# (10-10)/(50-10) = 0, (20-10)/(50-10) = 0.25, (30-10)/(50-10) = 0.75, 
+
+```
+
+---
+
+### 8. **How do you use `np.where()` for conditional replacement?**
+
+**Answer:**
+
+```python
+arr = np.array([10, 15, 20, 25, 30, 10])
+
+# Replace values > 20 with 99
+new_arr = np.where(arr > 20, 99, arr)
+print(new_arr)  
+```
+
+---
+
+### 9. **How do you work with structured arrays in NumPy?**
+
+**Answer:**
+Structured arrays allow you to store data with **multiple fields (like a table)**.
+
+```python
+data = np.array([(1, 'Alice', 25), (2, 'Bob', 30)],
+                dtype=[('id', 'i4'), ('name', 'U10'), ('age', 'i4')])
+
+print(data['name'])  # ['Alice' 'Bob']
+print(data[data['age'] > 26])  # [(2, 'Bob', 30)]
+```
+
+---
+
+### 10. **What is memory mapping in NumPy and when is it useful?**
+
+**Answer:**
+Memory mapping allows NumPy to read/write **large datasets from disk** without fully loading them into memory. Useful for **big data processing**.
+
+```python
+fp = np.memmap('data.dat', dtype='float32', mode='w+', shape=(1000, 1000))
+fp[0, :] = 1
+fp.flush()
+```
+
+---
