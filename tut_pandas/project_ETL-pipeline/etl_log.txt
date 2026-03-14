@@ -1,0 +1,5 @@
+2026-03-13 07:31:03,629 - INFO - ETL Pipeline Started
+2026-03-13 07:31:03,637 - INFO - Data extracted successfully
+2026-03-13 07:31:03,652 - INFO - Data transformed successfully
+2026-03-13 07:31:03,657 - INFO - Data loaded successfully
+2026-03-13 07:31:03,658 - INFO - ETL Pipeline Finished

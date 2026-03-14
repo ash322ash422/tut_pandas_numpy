@@ -1,0 +1,5 @@
+name,age,department,salary,salary_after_tax,salary_flag
+John,34,sales,50000,40000.0,
+Mary,39,hr,60000,48000.0,
+Bob,45,it,1200000,960000.0,High
+Loxford,53,finance,40000,32000.0,
